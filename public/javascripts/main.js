@@ -1,18 +1,20 @@
-  // ----- MAIN ----- //
-
-  // on click, run the goDecide function
-  $("#decision").click(goDecide);
-  // on click new form is shown
-  $("#again").click(function() {
+// MAIN CLIENT JavaScript
+// Decision button click handler, calls goDecide() function 
+$("#decision").click(goDecide);
+  
+// Click handler to show new form 
+$("#again").click(function() {
+    // Show new form 
     $(".form-container").show()
     $("#again").hide()
-    // erase old values
+    
+    // Erase Old Values
     $("#status").text('');
     $("#score").text('');
     $("#choice1").val('');
     $("#choice2").val('');
-    // hide decision text
+    
+    // Hide Decision Text
     $("#decision-text").hide();
   });
-
 });
